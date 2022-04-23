@@ -1,0 +1,15 @@
+{
+  "name": "web3-multichain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lolaji/web3-wallet-contract.git",
+  "author": "Ajibola Salami",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.6.4",
+    "lodash": "^4.17.21",
+    "mobile-detect": "^1.4.5",
+    "tronweb": "^4.1.0",
+    "web3modal": "^1.9.7"
+  }
+}
