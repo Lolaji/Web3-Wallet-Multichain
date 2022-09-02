@@ -5,7 +5,7 @@ module.exports = {
           is_tron: false
      },
      trc20: {
-          address: "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+          address: process.env.TRON_ADDRESS,
           is_tron: true,
      }
 }
