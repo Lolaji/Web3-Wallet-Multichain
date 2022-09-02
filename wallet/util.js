@@ -1,5 +1,5 @@
-import { ethers } from "ethers";
-import MobileDetect from "mobile-detect";
+const { ethers } = require("ethers");
+const MobileDetect = require("mobile-detect");
 
 const parseEther = (value) => {
      return ethers.utils.parseEther(value).toString();

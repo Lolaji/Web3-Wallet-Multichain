@@ -1,15 +1,26 @@
 {
   "name": "web3-multichain",
+  "keywords": [
+    "web3",
+    "web3-wallet",
+    "smart contract",
+    "multichain"
+  ],
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Lolaji/web3-wallet-contract.git",
-  "author": "Ajibola Salami",
+  "repository": "https://github.com/Lolaji/web3-multichain.git",
+  "author": {
+    "name": "Ajibola Salami",
+    "email": "ayo.lolade@gmail.com"
+  },
   "license": "MIT",
+  "module": "index.js",
   "dependencies": {
-    "ethers": "^5.6.4",
-    "lodash": "^4.17.21",
+    "@walletconnect/web3-provider": "^1.7.7",
+    "bufferutil": "^4.0.6",
     "mobile-detect": "^1.4.5",
     "tronweb": "^4.1.0",
+    "utf-8-validate": "^5.0.9",
     "web3modal": "^1.9.7"
   }
 }

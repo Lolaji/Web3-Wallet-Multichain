@@ -1,8 +1,11 @@
+const path = require('../resolveConfigPath');
+const mainConfigObj = path;
+console.log("Main Config: ", mainConfigObj)
 const _ = require('lodash')
-const config = require('../../config/contract');
-const networkConfig = require('../../config/network');
-import { ethers } from "ethers";
-import TronWeb from 'tronweb';
+const config = require('../config/contract');
+const networkConfig = require('../config/network');
+const { ethers } = require('ethers');
+const TronWeb = require('tronweb');
 
 class Contract {
      constructor(){
@@ -31,7 +34,7 @@ class Contract {
                          return await network.contract().at(this.config.address);
                     }
 
-                    let abi = require(`../../artifacts/${configName}.json`);
+                    let abi = require(`../artifacts/${configName}.json`);
                     return new ethers.Contract(this.config.address, abi, network);
      
                } else {

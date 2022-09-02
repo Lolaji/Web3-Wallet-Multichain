@@ -1,9 +1,9 @@
 // require('dotenv').config()
-import Web3Modal from 'web3modal';
-import { ethers } from 'ethers';
-import WalletConnectProvider from "@walletconnect/web3-provider";
+const Web3Modal = require('web3modal');
+const { ethers } = require('ethers');
+const WalletConnectProvider = require("@walletconnect/web3-provider");
 import { device } from './util';
-const config = require('../../config/network');
+const config = require('../config/network');
 
 class Wallet {
      constructor() {
